@@ -200,6 +200,7 @@ const char *path_get_archive_delim(const char *path)
          /* Check if this is a '.zip', '.apk' or '.7z' file */
          if (   string_is_equal(buf,     ".zip")
              || string_is_equal(buf,     ".apk")
+             || string_is_equal(buf,     ".muturn")
              || string_is_equal(buf + 1, ".7z"))
             return delim;
       }
